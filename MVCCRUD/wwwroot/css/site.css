@@ -1,0 +1,266 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.card-body p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+    .card-footer a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+        .card-footer a:hover {
+            text-decoration: underline;
+        }
+
+
+
+/* Estilos para el contenedor de los detalles */
+.user-detail {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de los detalles */
+.detail-item {
+    margin-bottom: 10px;
+}
+
+.detail-title {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detail-info {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* Estilos para los botones */
+.user-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .user-actions a {
+        text-decoration: none;
+        padding: 10px 15px;
+        margin: 0 5px;
+        border-radius: 5px;
+        color: white;
+        background-color: #007bff;
+        font-weight: bold;
+        transition: background-color 0.2s;
+    }
+
+        .user-actions a:hover {
+            background-color: #0056b3;
+        }
+
+/* Botón de volver */
+.btn-back {
+    background-color: #6c757d;
+}
+
+    .btn-back:hover {
+        background-color: #5a6268;
+    }
+
+
+
+
+/* Contenedor del formulario */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los grupos de formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .form-group input[type="text"], .form-group input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+/* Estilo para el botón de envío */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+
+/* Mensajes de error */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+/* Estilo para los mensajes de validación general */
+.validation-errors {
+    color: red;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Enlace para volver */
+.back-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .back-link a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+        .back-link a:hover {
+            color: #0056b3;
+        }
+
+
+/* Contenedor de los detalles del usuario */
+.user-detail {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Detalles del usuario */
+.detail-item {
+    margin-bottom: 10px;
+}
+
+.detail-title {
+    font-weight: bold;
+    display: block;
+    color: #333;
+}
+
+.detail-info {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Estilos del formulario */
+.delete-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Botón de eliminar */
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    .delete-btn:hover {
+        background-color: #c82333;
+    }
+
+/* Enlace para volver */
+.back-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+    .back-link:hover {
+        color: #0056b3;
+    }

@@ -1,0 +1,46 @@
+﻿@model MVCCRUD.Models.Usuario
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Crear Usuario</h1>
+
+<h4>Usuario</h4>
+<hr />
+<div class="form-container">
+    <form asp-action="Crear">
+        <div asp-validation-summary="ModelOnly" class="validation-errors"></div>
+
+        <div class="form-group">
+            <label asp-for="Nombre"></label>
+            <input asp-for="Nombre" />
+            <span asp-validation-for="Nombre" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Apellido"></label>
+            <input asp-for="Apellido" />
+            <span asp-validation-for="Apellido" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Dni"></label>
+            <input asp-for="Dni" />
+            <span asp-validation-for="Dni" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Crear" class="submit-btn" />
+        </div>
+    </form>
+</div>
+
+<div class="back-link">
+    <a asp-action="Index">Volver a la lista</a>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

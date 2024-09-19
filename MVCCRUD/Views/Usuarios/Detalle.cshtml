@@ -1,0 +1,29 @@
+﻿@model MVCCRUD.Models.Usuario
+
+@{
+    ViewData["Title"] = "Detalle";
+}
+
+<h1>Details</h1>
+
+<div class="user-detail">
+    <h4>Usuario</h4>
+    <hr />
+    <div class="detail-item">
+        <span class="detail-title">Nombre:</span>
+        <span class="detail-info">@Html.DisplayFor(model => model.Nombre)</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-title">Apellido:</span>
+        <span class="detail-info">@Html.DisplayFor(model => model.Apellido)</span>
+    </div>
+    <div class="detail-item">
+        <span class="detail-title">DNI:</span>
+        <span class="detail-info">@Html.DisplayFor(model => model.Dni)</span>
+    </div>
+</div>
+<div class="user-actions">
+    <a class="btn-edit" asp-action="Editar" asp-route-id="@Model?.Id">Edit</a>
+    <a class="btn-back" asp-action="Index">Back to List</a>
+</div>
+

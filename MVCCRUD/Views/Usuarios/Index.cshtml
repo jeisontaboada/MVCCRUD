@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MVCCRUD.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Crear">Create New</a>
+</p>
+<section class="cards-container">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <div class="card-header">
+                <h2>@Html.DisplayFor(modelItem => item.Nombre) @Html.DisplayFor(modelItem => item.Apellido)</h2>
+            </div>
+            <div class="card-body">
+                <p><strong>DNI:</strong> @Html.DisplayFor(modelItem => item.Dni)</p>
+            </div>
+            <div class="card-footer">
+                <a asp-action="Editar" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Detalle" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Eliminar" asp-route-id="@item.Id">Delete</a>
+            </div>
+        </div>
+    }
+</section>
+
